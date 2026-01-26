@@ -4,40 +4,166 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bioinformatics & Data Science in Healthcare - MK</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
     <style>
-        body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
-        h1 { color: #0077ff; }
-        nav a { margin-right: 15px; text-decoration: none; color: #0077ff; }
-        nav a:hover { text-decoration: underline; }
-        section { margin-top: 30px; }
-        .disclaimer { color: red; font-weight: bold; }
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f7fb;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0d6efd, #0a58ca);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-weight: 600;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 16px;
+            opacity: 0.9;
+        }
+
+        nav {
+            background-color: white;
+            padding: 12px;
+            text-align: center;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #0d6efd;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 950px;
+            margin: auto;
+            padding: 25px;
+        }
+
+        section {
+            background-color: white;
+            padding: 25px;
+            margin-top: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+        }
+
+        h2 {
+            color: #0a58ca;
+            margin-top: 0;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        .disclaimer {
+            color: #c00000;
+            font-weight: 600;
+        }
+
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+            color: #666;
+        }
     </style>
 </head>
+
 <body>
+
+<header>
     <h1>Bioinformatics & Data Science in Healthcare</h1>
+    <p>Classroom Assignment Website | MK</p>
+</header>
 
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#disclaimer">Disclaimer</a>
-    </nav>
+<nav>
+    <a href="#about">About</a>
+    <a href="#introduction">Introduction</a>
+    <a href="#applications">Applications</a>
+    <a href="#disclaimer">Disclaimer</a>
+</nav>
 
-    <section id="home">
-        <h2>Introduction</h2>
-        <p>
-        This website is made for classroom assignment submission only. It provides an overview of how bioinformatics and data science are applied in healthcare. 
-        The content is educational and may not be fully accurate.
-        </p>
-        <p>
-        Key areas include: genomics analysis, disease prediction, personalized medicine, and health data management using AI and machine learning.
-        </p>
-    </section>
+<div class="container">
 
-    <section id="disclaimer">
-        <h2>Disclaimer</h2>
-        <p class="disclaimer">
-        This website is made for classroom assignment submission only. Accuracy is not guaranteed. The content is for educational purposes. 
-        AI-generated content ≤30%.
-        </p>
-    </section>
+<section id="about">
+    <h2>About This Website</h2>
+    <p>
+        This website has been developed as part of a classroom assignment to present
+        an academic overview of the role of bioinformatics and data science in healthcare.
+        The objective is to explain key concepts in a clear and structured manner suitable
+        for undergraduate-level understanding.
+    </p>
+</section>
+
+<section id="introduction">
+    <h2>Introduction</h2>
+    <p>
+        Bioinformatics and data science are interdisciplinary fields that combine biology,
+        computer science, statistics, and artificial intelligence to analyze complex biological
+        and medical data. In healthcare, these approaches help in understanding diseases,
+        improving diagnosis, and developing effective treatment strategies.
+    </p>
+    <p>
+        The rapid growth of genomic data, electronic health records, and medical imaging
+        has made data-driven decision-making an essential component of modern healthcare systems.
+    </p>
+</section>
+
+<section id="applications">
+    <h2>Major Applications in Healthcare</h2>
+    <ul>
+        <li><strong>Genomics and Sequence Analysis:</strong> Identification of genetic variations associated with diseases.</li>
+        <li><strong>Disease Prediction:</strong> Use of data science models to predict disease risk and progression.</li>
+        <li><strong>Personalized Medicine:</strong> Customizing treatments based on individual genetic profiles.</li>
+        <li><strong>Medical Imaging Analysis:</strong> Application of AI algorithms for accurate image-based diagnosis.</li>
+        <li><strong>Clinical Decision Support Systems:</strong> Supporting healthcare professionals with data-driven insights.</li>
+    </ul>
+</section>
+
+<section id="disclaimer">
+    <h2>Disclaimer</h2>
+    <p class="disclaimer">
+        This website is created solely for classroom assignment submission.
+        The information provided is for educational purposes only and may not be completely accurate.
+        Any resemblance to real medical advice is unintentional. AI-generated content has been kept
+        within acceptable academic limits.
+    </p>
+</section>
+
+</div>
+
+<footer>
+    © 2026 | Bioinformatics & Data Science in Healthcare | MK
+</footer>
+
 </body>
 </html>
