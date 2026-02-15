@@ -3,10 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bioinformatics & Data Science in Modern Healthcare</title>
-
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<title>Bioinformatics & Data Science in Healthcare</title>
 
 <!-- Bootstrap -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -14,99 +11,76 @@
 <!-- Font Awesome -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
-<!-- AOS Animation -->
+<!-- AOS Animations -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
 
 <style>
-
-body {
-    font-family: 'Poppins', sans-serif;
-    background: #f4f9fc;
-    color: #2c3e50;
-    line-height: 1.9;
+body{
+    font-family: 'Segoe UI', sans-serif;
+    background:#f5f9fc;
+    color:#2c3e50;
+    line-height:1.9;
 }
 
-/* Navbar */
-.navbar {
-    background: linear-gradient(to right, #0a2a43, #145374);
-    padding: 15px 0;
+.navbar{
+    background:linear-gradient(to right,#0a2a43,#145374);
 }
 
-.navbar-brand {
-    font-weight: 700;
-    letter-spacing: 1px;
+.navbar-brand{
+    color:white!important;
+    font-weight:600;
 }
 
-/* Hero */
-.hero {
-    background: linear-gradient(-45deg, #0a2a43, #145374, #1b6ca8, #0a2a43);
-    background-size: 400% 400%;
-    animation: gradientMove 12s ease infinite;
-    color: white;
-    padding: 130px 0;
-    text-align: center;
+.hero{
+    background:url('https://images.unsplash.com/photo-1581091870627-3b1e9f1b4b4e?auto=format&fit=crop&w=1600&q=80') center/cover;
+    color:white;
+    padding:150px 0;
+    text-align:center;
 }
 
-@keyframes gradientMove {
-    0% {background-position: 0% 50%;}
-    50% {background-position: 100% 50%;}
-    100% {background-position: 0% 50%;}
+.hero h1{
+    font-weight:700;
 }
 
-/* Tabs */
-.nav-tabs .nav-link {
-    font-weight: 500;
-    color: #145374;
+.section-title{
+    font-weight:700;
+    margin-bottom:25px;
+    color:#0a2a43;
+    text-transform:uppercase;
+    letter-spacing:1px;
 }
 
-.nav-tabs .nav-link.active {
-    background-color: #145374;
-    color: white;
-    border-radius: 10px;
+.tab-content{
+    padding:50px;
+    background:white;
+    border-radius:15px;
+    box-shadow:0 10px 35px rgba(0,0,0,0.08);
 }
 
-/* Glass Card */
-.tab-content {
-    background: rgba(255,255,255,0.95);
-    padding: 60px;
-    border-radius: 20px;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
-    transition: 0.4s ease;
+.section-img{
+    width:100%;
+    border-radius:12px;
+    margin-top:25px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.12);
 }
 
-/* Icons */
-.section-icon {
-    font-size: 45px;
-    color: #145374;
-    margin-bottom: 20px;
+.nav-tabs .nav-link.active{
+    background:#145374;
+    color:white!important;
+    border-radius:8px;
 }
 
-/* Images */
-.section-img {
-    border-radius: 15px;
-    margin-top: 30px;
-    box-shadow: 0 8px 30px rgba(0,0,0,0.1);
-    transition: transform 0.4s ease;
+footer{
+    background:#0a2a43;
+    color:white;
+    padding:35px 0;
+    margin-top:60px;
 }
 
-.section-img:hover {
-    transform: scale(1.03);
+.reference{
+    font-size:0.8rem;
+    vertical-align:super;
 }
-
-/* References */
-.reference {
-    font-size: 0.8rem;
-    vertical-align: super;
-}
-
-/* Footer */
-footer {
-    background: #0a2a43;
-    color: white;
-    padding: 40px 0;
-    margin-top: 60px;
-}
-
 </style>
 </head>
 
@@ -114,260 +88,134 @@ footer {
 
 <nav class="navbar navbar-expand-lg">
 <div class="container">
-<a class="navbar-brand text-white" href="#">Bioinformatics Institute</a>
+<a class="navbar-brand" href="#">Bioinformatics & Data Science</a>
 </div>
 </nav>
 
 <section class="hero">
 <div class="container">
-<h1 class="fw-bold">Bioinformatics & Data Science in Modern Healthcare</h1>
-<p class="lead mt-3">Transforming Biomedical Data into Intelligent Clinical Decisions</p>
+<h1 class="display-4">Bioinformatics & Data Science in Modern Healthcare</h1>
+<p class="lead mt-3">Advancing Precision Medicine Through Computational Intelligence</p>
 </div>
 </section>
 
 <div class="container my-5">
 
-<ul class="nav nav-tabs justify-content-center flex-wrap">
+<ul class="nav nav-tabs justify-content-center">
 <li class="nav-item"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#home">Home</button></li>
 <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#foundations">Foundations</button></li>
-<li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#datascience">Data Science</button></li>
-<li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#genomics">Genomics</button></li>
-<li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#ehr">EHR</button></li>
-<li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#cdss">Clinical Apps</button></li>
-<li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#publichealth">Public Health</button></li>
-<li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#cloud">Cloud</button></li>
-<li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#ethics">Ethics</button></li>
-<li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#future">Future</button></li>
+<li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#applications">Applications</button></li>
+<li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#infrastructure">Infrastructure & Ethics</button></li>
 <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#references">References</button></li>
 </ul>
 
 <div class="tab-content mt-4">
 
 <!-- HOME -->
-<div class="tab-pane fade show active" id="home" data-aos="fade-up">
-<i class="fa-solid fa-hospital section-icon"></i>
-<p>
-Modern healthcare systems generate enormous amounts of data every single day. This includes genetic sequences, laboratory results, imaging reports, clinical notes, wearable device readings, and electronic health records. While this data has great potential, managing and interpreting it effectively remains a major challenge.
-Traditional analytical approaches are no longer sufficient to handle such large and complex datasets. This is where bioinformatics and data science play a transformative role.
-Bioinformatics combines biological sciences with computational techniques to study molecular data such as DNA, RNA, and proteins. It helps researchers understand genetic mutations, disease mechanisms, and biological pathways involved in various disorders.
-At the same time, data science applies statistical modeling, machine learning, and predictive analytics to large healthcare datasets. These tools uncover patterns, predict disease risks, and support better clinical decisions.
-When combined, these fields convert raw data into meaningful medical insights. They contribute to earlier diagnosis, personalized treatment strategies, and improved patient outcomes.
-As healthcare continues to digitize, computational approaches are becoming essential components of modern medical practice.
-<span class="reference">[1–3]</span>
+<div class="tab-pane fade show active" id="home">
+
+<h2 class="section-title" data-aos="fade-up">Overview</h2>
+
+<p data-aos="fade-up" data-aos-delay="100">
+Modern healthcare systems generate vast quantities of biomedical and clinical data, including genomic sequences, laboratory results, imaging reports, and electronic health records. Traditional analytical methods are no longer sufficient to interpret such complex datasets efficiently.
 </p>
-<img src="https://images.unsplash.com/photo-1581092334607-29b2a5f8c8d5" class="img-fluid section-img">
+
+<p data-aos="fade-up" data-aos-delay="200">
+Bioinformatics integrates biology, computational science, and statistical modeling to analyze molecular-level data. Concurrently, data science applies machine learning, artificial intelligence, and predictive analytics to uncover patterns within large healthcare datasets.
+</p>
+
+<p data-aos="fade-up" data-aos-delay="300">
+Together, these disciplines transform raw biomedical data into actionable clinical insights, supporting early diagnosis, personalized therapy, and improved healthcare outcomes<span class="reference">[1–3]</span>.
+</p>
+
+<img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=1400&q=80" class="section-img" data-aos="zoom-in">
+
 </div>
 
 <!-- FOUNDATIONS -->
-<div class="tab-pane fade" id="foundations" data-aos="fade-up">
-<i class="fa-solid fa-dna section-icon"></i>
-<p>
-Bioinformatics is an interdisciplinary field that integrates biology, computer science, mathematics, and statistics to analyze biological information. With the rapid advancement of high-throughput sequencing technologies, the volume of genomic data has increased dramatically. As a result, computational analysis has become indispensable.
-Some core components of bioinformatics include:
-• Sequence Alignment – Comparing DNA, RNA, or protein sequences to identify similarities, mutations, and evolutionary relationships.
-• Genome Annotation – Identifying genes and functional regions within a genome.
-• Protein Structure Prediction – Modeling three-dimensional protein structures to understand their biological functions and drug interactions.
-• Biological Databases – Organized repositories storing genomic and proteomic information for global access.
-Bioinformatics tools assist in detecting disease-related mutations, analyzing gene expression patterns, and studying cellular pathways. In clinical practice, these methods are widely used in cancer genomics, rare disease diagnosis, and drug target discovery.
-By identifying specific genetic variations linked to diseases, clinicians can make more accurate diagnostic and therapeutic decisions.
-<span class="reference">[2]</span>
+<div class="tab-pane fade" id="foundations">
+
+<h2 class="section-title" data-aos="fade-right">Foundations of Bioinformatics</h2>
+
+<p data-aos="fade-right" data-aos-delay="100">
+Bioinformatics is an interdisciplinary field combining biological sciences with computational techniques. It focuses on analyzing DNA, RNA, and protein sequences to understand genetic variation and molecular mechanisms of disease.
 </p>
-<img src="https://images.unsplash.com/photo-1582719508461-905c673771fd" class="img-fluid section-img">
+
+<ul data-aos="fade-right" data-aos-delay="200">
+<li>Sequence alignment and comparative genomics</li>
+<li>Genome annotation and variant identification</li>
+<li>Protein structure modeling and functional prediction</li>
+<li>Biological database development and curation</li>
+</ul>
+
+<p data-aos="fade-right" data-aos-delay="300">
+These computational frameworks are essential for cancer genomics, rare disease diagnosis, and pharmacogenomics research<span class="reference">[2]</span>.
+</p>
+
+<img src="https://images.pexels.com/photos/3825581/pexels-photo-3825581.jpeg?auto=format&fit=crop&w=1400&q=80" class="section-img" data-aos="zoom-in">
+
 </div>
 
-<!-- DATA SCIENCE -->
-<div class="tab-pane fade" id="datascience" data-aos="fade-up">
-<i class="fa-solid fa-brain section-icon"></i>
-<p>
-Healthcare systems collect two primary types of data: structured and unstructured.
-Structured data includes laboratory values, diagnostic codes, and billing records. Unstructured data consists of physician notes, radiology images, and data generated by wearable health devices.
-To extract meaningful insights from these diverse sources, advanced analytical techniques are required.
-Data science integrates statistical analysis, artificial intelligence, machine learning, and data visualization to process healthcare information. Machine learning models can detect patterns in large datasets that may not be visible through conventional statistical methods.
-Key applications include:
-• Early disease prediction
-• Patient outcome modeling
-• Hospital resource optimization
-• Treatment response analysis
-• Clinical decision support
-For example, predictive models can identify patients at risk of complications such as sepsis or cardiovascular events. Early detection enables timely medical intervention and significantly improves survival rates.
-Data science also enhances operational efficiency by forecasting hospital admissions and resource requirements.
-<span class="reference">[3]</span>
+<!-- APPLICATIONS -->
+<div class="tab-pane fade" id="applications">
+
+<h2 class="section-title" data-aos="fade-left">Clinical & Research Applications</h2>
+
+<h5 data-aos="fade-left" data-aos-delay="100"><i class="fa-solid fa-dna"></i> Genomic Medicine</h5>
+<p data-aos="fade-left" data-aos-delay="150">
+Next-Generation Sequencing enables identification of disease-associated variants and supports precision treatment strategies.
 </p>
-<img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c" class="img-fluid section-img">
+
+<h5 data-aos="fade-left" data-aos-delay="200"><i class="fa-solid fa-brain"></i> Predictive Analytics</h5>
+<p data-aos="fade-left" data-aos-delay="250">
+Machine learning models predict disease progression, treatment response, and hospital resource utilization<span class="reference">[3]</span>.
+</p>
+
+<h5 data-aos="fade-left" data-aos-delay="300"><i class="fa-solid fa-hospital"></i> Electronic Health Records</h5>
+<p data-aos="fade-left" data-aos-delay="350">
+Structured medical coding improves interoperability, research analytics, and healthcare planning<span class="reference">[4]</span>.
+</p>
+
+<img src="https://images.unsplash.com/photo-1581091215367-59ab6b5a7d9c?auto=format&fit=crop&w=1400&q=80" class="section-img" data-aos="zoom-in">
+
 </div>
 
-<!-- GENOMICS -->
-<div class="tab-pane fade" id="genomics" data-aos="fade-up">
-<i class="fa-solid fa-microscope section-icon"></i>
-<p>
-Next-Generation Sequencing (NGS) technologies have revolutionized genomics by enabling rapid sequencing of entire genomes. However, the raw sequencing output is highly complex and requires multiple computational steps before it becomes clinically meaningful.
-A typical genomic analysis workflow includes:
-1.	Generating raw sequence data
-2.	Performing quality control
-3.	Aligning sequences to a reference genome
-4.	Identifying genetic variants
-5.	Annotating functional significance
-6.	Clinical interpretation
-Through these bioinformatics pipelines, raw genetic data is transformed into actionable medical insights.
-Precision medicine builds upon this foundation. Instead of applying uniform treatments to all patients, precision medicine considers individual genetic differences, environmental exposures, and lifestyle factors.
-An important branch of precision medicine is pharmacogenomics. This field studies how genetic variations influence drug metabolism and therapeutic response. Certain gene variants can alter how patients respond to medications, affecting both efficacy and side effects.
-By identifying these variations, healthcare providers can personalize drug selection and dosage, thereby improving treatment outcomes and minimizing adverse effects.
-<span class="reference">[1]</span>
-</p>
-<img src="https://images.unsplash.com/photo-1579154204601-01588f351e67" class="img-fluid section-img">
-</div>
+<!-- INFRASTRUCTURE -->
+<div class="tab-pane fade" id="infrastructure">
 
-<!-- EHR -->
-<div class="tab-pane fade" id="ehr" data-aos="fade-up">
-<i class="fa-solid fa-file-medical section-icon"></i>
-<p>
-Electronic Health Records (EHRs) are digital systems used to store and manage patient information. They have largely replaced traditional paper-based medical records, allowing healthcare professionals to access patient data quickly and securely across different departments and institutions.
-An EHR typically includes:
-•	Patient demographic details
-•	Medical and clinical history
-•	Laboratory and imaging results
-•	Medication prescriptions
-•	Treatment plans and follow-up notes
-Because healthcare systems handle vast amounts of information, medical coding plays a crucial role. Coding systems assign standardized codes to diagnoses, procedures, and treatments. These standardized codes ensure consistency in documentation and improve communication between hospitals, insurance providers, and researchers.
-There are several key advantages of EHR systems and medical coding:
-•	Improved data organization and accessibility
-•	Better interoperability between healthcare institutions
-•	Efficient billing and insurance processing
-•	Enhanced support for clinical research and analytics
-Structured and coded data also enables large-scale population studies. Researchers can analyze disease trends, treatment outcomes, and healthcare utilization patterns using standardized datasets. This structured approach supports both clinical decision-making and public health planning.
-<span class="reference">[4]</span>
-</p>
-<img src="https://images.unsplash.com/photo-1580281657527-47d3f9b1dbf6" class="img-fluid section-img">
-</div>
+<h2 class="section-title" data-aos="fade-up">Infrastructure & Ethical Considerations</h2>
 
-<!-- CDSS -->
-<div class="tab-pane fade" id="cdss" data-aos="fade-up">
-<i class="fa-solid fa-heart-pulse section-icon"></i>
-<p>
-Clinical Decision Support Systems (CDSS) are digital tools designed to assist healthcare professionals in making informed medical decisions. These systems combine patient data with evidence-based guidelines and computational models to provide real-time recommendations.
-CDSS applications include:
-•	AI-assisted interpretation of radiology images
-•	Genetic mutation analysis in oncology
-•	Early detection systems for sepsis
-•	Cardiovascular risk assessment tools
-By analyzing patient information continuously, these systems can generate alerts and recommendations when potential risks are detected. For example, early warning systems may flag abnormal vital signs that indicate possible complications.
-One of the major benefits of CDSS is the reduction of human error. They help improve diagnostic accuracy and support consistent decision-making. However, it is important to understand that these systems are designed to support clinicians, not replace them. Human expertise, ethical judgment, and clinical experience remain essential in patient care.
-<span class="reference">[3]</span>
+<h5 data-aos="fade-up" data-aos-delay="100"><i class="fa-solid fa-cloud"></i> Cloud Computing</h5>
+<p data-aos="fade-up" data-aos-delay="150">
+Scalable cloud platforms provide high-performance computing for genomic pipelines and AI-based analytics.
 </p>
-<img src="https://images.unsplash.com/photo-1581594693702-fbdc51b2763b" class="img-fluid section-img">
-</div>
 
-<!-- PUBLIC HEALTH -->
-<div class="tab-pane fade" id="publichealth" data-aos="fade-up">
-<i class="fa-solid fa-globe section-icon"></i>
-<p>
-Public health practice has increasingly become data-driven. With digital health records, laboratory reporting systems, and global connectivity, researchers now have access to large datasets that reflect population-level health trends.
-Bioinformatics and data science contribute significantly to epidemiological modeling. Epidemiological models use mathematical and computational approaches to study how diseases spread within populations. These models consider factors such as demographics, environmental conditions, genetic susceptibility, and mobility patterns.
-Key applications include:
-1. Infectious Disease Surveillance
-Real-time monitoring systems analyze hospital admissions and laboratory results to detect unusual patterns. This can provide early warnings for emerging infections.
-2. Outbreak Prediction
-Models such as the SIR (Susceptible–Infected–Recovered) framework simulate disease transmission dynamics. These models help policymakers evaluate the potential impact of interventions like lockdowns or vaccination campaigns.
-3. Vaccination Impact Assessment
-Data-driven approaches estimate herd immunity thresholds and assess vaccine effectiveness across populations.
-4. Healthcare Resource Planning
-Predictive analytics can forecast hospital bed occupancy, ICU demand, and medical supply requirements during health crises.
-During pandemics and public health emergencies, data dashboards and forecasting tools enable governments to respond quickly. The integration of genomic sequencing with epidemiology, known as genomic epidemiology, further allows researchers to track viral mutations and transmission chains.
-These technologies support informed decision-making at both national and global levels.
-<span class="reference">[5]</span>
+<h5 data-aos="fade-up" data-aos-delay="200"><i class="fa-solid fa-shield-halved"></i> Data Privacy & Ethics</h5>
+<p data-aos="fade-up" data-aos-delay="250">
+Healthcare data confidentiality, informed consent, and algorithmic fairness are critical in responsible implementation<span class="reference">[5]</span>.
 </p>
-<img src="https://images.unsplash.com/photo-1584036561566-baf8f5f1b144" class="img-fluid section-img">
-</div>
 
-<!-- CLOUD -->
-<div class="tab-pane fade" id="cloud" data-aos="fade-up">
-<i class="fa-solid fa-cloud section-icon"></i>
-<p>
-The growth of genomic sequencing and digital health systems has created substantial infrastructure demands. For example, sequencing a single human genome can generate hundreds of gigabytes of raw data. Managing such volumes requires scalable and flexible computing solutions.
-Cloud computing provides on-demand access to storage and processing power without requiring physical hardware investments. Many healthcare institutions and research organizations now rely on cloud platforms to store and analyze biomedical data.
-Key benefits include:
-Scalability – Resources can be adjusted according to workload requirements.
-High-Performance Computing – Complex genomic analyses and machine learning tasks can be processed efficiently.
-Secure Collaboration – Encrypted cloud systems allow researchers from different institutions to collaborate safely.
-Data Backup and Recovery – Cloud services provide redundancy and disaster recovery mechanisms.
-Despite these advantages, cloud adoption raises concerns regarding cybersecurity, cross-border data transfer, and data sovereignty. Healthcare organizations must therefore implement strict security measures, including encryption protocols and multi-factor authentication.
-Cloud infrastructure also supports telemedicine, remote diagnostics, and integration of wearable device data into centralized systems. As digital health continues to evolve, cloud technology will remain central to healthcare analytics.
-</p>
-<img src="https://images.unsplash.com/photo-1581090700227-4c4f50e64c9f" class="img-fluid section-img">
-</div>
+<img src="https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?auto=format&fit=crop&w=1400&q=80" class="section-img" data-aos="zoom-in">
 
-<!-- ETHICS -->
-<div class="tab-pane fade" id="ethics" data-aos="fade-up">
-<i class="fa-solid fa-shield-halved section-icon"></i>
-<p>
-The increased use of digital health technologies brings important ethical and legal responsibilities. Healthcare data often contains highly sensitive information, including genetic details, medical history, and behavioral patterns. Protecting this data is essential to maintain patient trust.
-Major ethical considerations include:
-Patient Confidentiality
-Data breaches or unauthorized access can expose private medical information and potentially lead to discrimination.
-Genomic Data Protection
-Unlike other medical information, genetic data is permanent and uniquely identifiable. Misuse of such data can have long-term consequences for individuals and families.
-Algorithmic Bias
-AI systems trained on limited datasets may produce biased predictions, leading to unequal healthcare outcomes among different populations.
-Informed Consent
-Patients should clearly understand how their data is collected, stored, analyzed, and shared.
-International regulatory frameworks emphasize transparency, accountability, and explainability in AI systems. Healthcare professionals must be able to interpret and validate algorithmic recommendations before applying them in clinical settings.
-Balancing innovation with ethical responsibility remains one of the most significant challenges in digital healthcare.
-<span class="reference">[2]</span>
-</p>
-<img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df" class="img-fluid section-img">
-</div>
-
-<!-- FUTURE -->
-<div class="tab-pane fade" id="future" data-aos="fade-up">
-<i class="fa-solid fa-lightbulb section-icon"></i>
-<p>
-Although bioinformatics and data science have significantly advanced healthcare, several limitations remain.
-Current challenges include:
-Data Heterogeneity
-Healthcare data exists in multiple formats across institutions, making integration difficult.
-Interoperability Barriers
-Lack of standardized systems restricts smooth information exchange between hospitals and research centers.
-Computational Demands
-Advanced machine learning algorithms require substantial computing power and technical expertise.
-Regulatory Complexity
-Approval processes for AI-based medical tools can be time-consuming and rigorous.
-Limited Clinical Familiarity
-Some healthcare professionals may lack training in interpreting computational outputs, slowing adoption.
-Looking ahead, healthcare analytics is expected to become even more integrated into routine practice. Future developments may include:
-•	Real-time genomic diagnostics within clinical workflows
-•	Explainable AI systems to enhance clinician trust
-•	Integration of wearable health monitoring data
-•	Expansion of personalized preventive medicine
-•	Global data-sharing collaborations for rare disease research
-Emerging approaches such as federated learning may allow institutions to collaboratively train AI models without directly sharing sensitive patient data, thereby improving privacy protection.
-In the coming years, bioinformatics and data science will likely transition from supportive tools to core components of healthcare infrastructure. Their continued development will contribute to earlier disease detection, more accurate treatments, and more efficient healthcare systems worldwide.
-</p>
-<img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d" class="img-fluid section-img">
 </div>
 
 <!-- REFERENCES -->
 <div class="tab-pane fade" id="references">
-<h4>References (Vancouver Style)</h4>
+
+<h2 class="section-title">References (Vancouver Style)</h2>
+
 <ol>
-<li>Collins FS, Varmus H. A new initiative on precision medicine. N Engl J Med. 2015;372(9):793-795.</li>
-<li>Topol EJ. High-performance medicine: the convergence of human and artificial intelligence. Nat Med. 2019;25(1):44-56.</li>
-<li>Beam AL, Kohane IS. Big data and machine learning in health care. JAMA. 2018;319(13):1317-1318.</li>
-<li>Hripcsak G, Albers DJ. Next-generation phenotyping of electronic health records. J Am Med Inform Assoc. 2013;20(1):117-121.</li>
-<li>Kucharski AJ, Russell TW, Diamond C, et al. Early dynamics of transmission and control of COVID-19. Lancet Infect Dis. 2020;20(5):553-558.</li>
+<li>Collins FS, Varmus H. A new initiative on precision medicine. N Engl J Med. 2015;372(9):793–795.</li>
+<li>Topol EJ. High-performance medicine. Nat Med. 2019;25(1):44–56.</li>
+<li>Beam AL, Kohane IS. Big data and machine learning in health care. JAMA. 2018;319(13):1317–1318.</li>
+<li>Hripcsak G, Albers DJ. Next-generation phenotyping of electronic health records. J Am Med Inform Assoc. 2013;20(1):117–121.</li>
+<li>Kucharski AJ, Russell TW, Diamond C, et al. Early dynamics of transmission. Lancet Infect Dis. 2020;20(5):553–558.</li>
 </ol>
+
 </div>
 
 </div>
 </div>
-
-<section class="container text-center my-5">
-<h4>Professional Disclaimer</h4>
-<p>
-This website has been developed strictly for academic coursework and educational purposes.
-All content is compiled from peer-reviewed literature and publicly available scholarly sources.
-It does not provide medical or clinical advice.
-</p>
-</section>
 
 <footer class="text-center">
 <p>© 2026 Bioinformatics & Data Science in Healthcare</p>
@@ -376,7 +224,9 @@ It does not provide medical or clinical advice.
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-<script>AOS.init({ duration: 1000 });</script>
+<script>
+AOS.init({ duration:1000, once:true });
+</script>
 
 </body>
 </html>
