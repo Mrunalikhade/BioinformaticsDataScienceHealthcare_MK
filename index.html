@@ -518,6 +518,67 @@ Such systems enhance diagnostic precision and support evidence-based interventio
 
 });
 </script>
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+
+/* ==============================
+   FIX OLD FAKE FIGURE LABELS
+============================== */
+document.querySelectorAll(".figure-box").forEach(el => el.remove());
+
+/* ==============================
+   INTRODUCTION – ADD REAL VISUAL
+============================== */
+document.querySelector("#home").insertAdjacentHTML("beforeend", `
+
+<hr class="my-5">
+
+<h4>Genomic Research and Computational Analysis</h4>
+
+<div class="text-center my-4">
+<img src="https://images.unsplash.com/photo-1581091012184-7c55f3b4b9c7?auto=format&fit=crop&w=1200&q=80" 
+class="img-fluid rounded shadow" 
+style="max-height:400px; object-fit:cover;">
+<p style="font-size:14px; color:#555; margin-top:10px;">
+<strong>Figure 1:</strong> Laboratory-based genomic sequencing and computational analysis environment.
+</p>
+</div>
+
+<p>
+High-throughput sequencing platforms generate extensive nucleotide data which is subsequently processed through computational pipelines. 
+These integrated laboratory and computational workflows form the structural backbone of modern bioinformatics research and precision medicine systems.
+</p>
+
+`);
+
+
+/* ==============================
+   APPLICATIONS – ADD MEDICAL AI VISUAL
+============================== */
+document.querySelector("#applications").insertAdjacentHTML("beforeend", `
+
+<hr class="my-5">
+
+<h4>Artificial Intelligence in Clinical Analytics</h4>
+
+<div class="text-center my-4">
+<img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80" 
+class="img-fluid rounded shadow" 
+style="max-height:400px; object-fit:cover;">
+<p style="font-size:14px; color:#555; margin-top:10px;">
+<strong>Figure 2:</strong> AI-assisted healthcare analytics integrating medical imaging and predictive modeling.
+</p>
+</div>
+
+<p>
+Machine learning algorithms analyze imaging data, laboratory measurements, and patient records to identify diagnostic patterns. 
+Such AI-driven systems enhance clinical accuracy, optimize therapeutic strategies, and support data-informed healthcare decision-making.
+</p>
+
+`);
+
+});
+</script>
 
 </body>
 </html>
