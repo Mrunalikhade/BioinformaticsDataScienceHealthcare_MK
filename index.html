@@ -742,6 +742,84 @@ if(appTab){
 
 });
 </script>
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+
+/* ===========================
+   FORCE REBUILD APPLICATION TAB
+=========================== */
+
+const appTab = document.getElementById("applications");
+
+if(appTab){
+
+    appTab.innerHTML = `
+    
+    <h2 class="section-title">Clinical Applications of Bioinformatics & Data Science</h2>
+
+    <p>
+    Bioinformatics and data science methodologies are actively transforming clinical practice. 
+    By integrating genomic sequencing, electronic health records, and predictive modeling systems, 
+    healthcare institutions are able to deliver precision-driven and evidence-based medical care.
+    </p>
+
+    <div class="text-center my-4">
+        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1400&q=80"
+        class="img-fluid rounded shadow"
+        style="max-height:420px; object-fit:cover;">
+        <p style="font-size:14px; color:#555; margin-top:10px;">
+        <strong>Figure 2:</strong> AI-supported clinical analytics integrating genomic and diagnostic datasets.
+        </p>
+    </div>
+
+    <p>
+    In oncology, genomic mutation analysis enables targeted therapeutic strategies. 
+    In cardiology, predictive algorithms estimate risk probabilities for cardiovascular events. 
+    In epidemiology, large-scale data modeling supports outbreak detection and resource allocation.
+    </p>
+
+    <table class="table table-bordered mt-4">
+        <thead class="table-light">
+            <tr>
+                <th>Domain</th>
+                <th>Computational Approach</th>
+                <th>Clinical Outcome</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Oncology</td>
+                <td>Next-Generation Sequencing + Variant Analysis</td>
+                <td>Personalized cancer therapy</td>
+            </tr>
+            <tr>
+                <td>Cardiology</td>
+                <td>Machine Learning Risk Models</td>
+                <td>Early cardiac intervention</td>
+            </tr>
+            <tr>
+                <td>Public Health</td>
+                <td>Epidemiological Data Modeling</td>
+                <td>Disease outbreak forecasting</td>
+            </tr>
+            <tr>
+                <td>Pharmacogenomics</td>
+                <td>Drug-response prediction algorithms</td>
+                <td>Reduced adverse drug reactions</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>
+    These applications illustrate how computational systems convert complex biomedical datasets 
+    into actionable clinical insights, enhancing patient safety, treatment efficiency, and healthcare system performance.
+    </p>
+
+    `;
+}
+
+});
+</script>
 
 </body>
 </html>
