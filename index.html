@@ -258,6 +258,176 @@ tension:0.4
 }
 });
 </script>
+<script>
+
+/* ------------------------------
+   EXTENDED ACADEMIC CONTENT
+--------------------------------*/
+
+document.addEventListener("DOMContentLoaded", function(){
+
+/* HOME TAB EXTENSION */
+document.querySelector("#home").insertAdjacentHTML("beforeend", `
+
+<hr class="my-4">
+
+<h4>Scope and Academic Relevance</h4>
+<p>
+Healthcare systems worldwide are transitioning toward data-driven clinical environments. 
+The integration of computational genomics, digital diagnostics, and predictive analytics 
+represents a paradigm shift from reactive treatment models to preventive and precision-based care frameworks.
+</p>
+
+<div class="figure-box">
+<strong>Figure 1.1:</strong> Integrated digital health architecture combining genomics, clinical informatics, predictive analytics, and decision-support systems.
+</div>
+
+<div class="row text-center mt-4">
+<div class="col-md-4">
+<h3 class="counter" data-target="80">0</h3>
+<p>AI adoption growth in healthcare (%)</p>
+</div>
+<div class="col-md-4">
+<h3 class="counter" data-target="600">0</h3>
+<p>Petabytes of genomic data processed</p>
+</div>
+<div class="col-md-4">
+<h3 class="counter" data-target="70">0</h3>
+<p>Hospitals using advanced EHR analytics (%)</p>
+</div>
+</div>
+`);
+
+
+/* FOUNDATIONS EXTENSION */
+document.querySelector("#foundations").insertAdjacentHTML("beforeend", `
+
+<hr class="my-4">
+
+<h4>Core Computational Techniques</h4>
+<ul>
+<li><strong>Sequence Alignment:</strong> Comparative analysis of nucleotide or amino acid sequences.</li>
+<li><strong>Genome Annotation:</strong> Functional identification of coding and regulatory regions.</li>
+<li><strong>Structural Bioinformatics:</strong> Three-dimensional protein modeling.</li>
+<li><strong>Variant Calling:</strong> Detection of disease-associated genetic alterations.</li>
+</ul>
+
+<h4 class="mt-4">Standard Bioinformatics Workflow</h4>
+<div class="figure-box">
+Raw Sequencing Data → Quality Assessment → Alignment → Variant Detection → Functional Interpretation → Clinical Integration
+</div>
+
+<p>
+Standardized computational workflows enhance reproducibility, reliability, and clinical interpretability of genomic results.
+</p>
+`);
+
+
+/* APPLICATIONS EXTENSION */
+document.querySelector("#applications").insertAdjacentHTML("beforeend", `
+
+<hr class="my-4">
+
+<h4>Comparative Clinical Applications</h4>
+
+<table class="table table-bordered mt-3">
+<thead class="table-light">
+<tr>
+<th>Medical Domain</th>
+<th>Analytical Method</th>
+<th>Clinical Outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Oncology</td>
+<td>Genomic mutation profiling</td>
+<td>Personalized targeted therapy</td>
+</tr>
+<tr>
+<td>Cardiology</td>
+<td>Predictive risk modeling</td>
+<td>Early intervention strategies</td>
+</tr>
+<tr>
+<td>Epidemiology</td>
+<td>Disease spread modeling</td>
+<td>Outbreak containment planning</td>
+</tr>
+<tr>
+<td>Pharmacogenomics</td>
+<td>Drug-response analytics</td>
+<td>Reduced adverse reactions</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Machine learning frameworks enhance predictive accuracy while supporting cost-effective healthcare management systems.
+</p>
+`);
+
+
+/* INFRASTRUCTURE EXTENSION */
+document.querySelector("#infrastructure").insertAdjacentHTML("beforebegin", ``);
+
+document.querySelector("#infrastructure").insertAdjacentHTML("afterbegin", `
+<div class="mb-4"></div>
+`);
+
+document.querySelector("#infrastructure").insertAdjacentHTML("beforeend", `
+
+<hr class="my-4">
+
+<h4>Digital Infrastructure Components</h4>
+<ul>
+<li>Cloud-based genomic repositories</li>
+<li>High-performance computing clusters</li>
+<li>Secure multi-institutional data exchange platforms</li>
+<li>AI-enabled clinical decision engines</li>
+</ul>
+
+<p>
+Strong encryption protocols, governance frameworks, and ethical compliance mechanisms are essential 
+to ensure responsible deployment of large-scale biomedical analytics systems.
+</p>
+`);
+
+
+/* ------------------------------
+   ANIMATED COUNTERS
+--------------------------------*/
+
+const counters = document.querySelectorAll('.counter');
+counters.forEach(counter => {
+counter.innerText = '0';
+const updateCounter = () => {
+const target = +counter.getAttribute('data-target');
+const c = +counter.innerText;
+const increment = target / 200;
+if(c < target){
+counter.innerText = `${Math.ceil(c + increment)}`;
+setTimeout(updateCounter, 10);
+} else {
+counter.innerText = target + "+";
+}
+};
+updateCounter();
+});
+
+
+/* ------------------------------
+   SMOOTH TAB FADE ANIMATION
+--------------------------------*/
+
+const tabPanes = document.querySelectorAll('.tab-pane');
+tabPanes.forEach(pane=>{
+pane.style.transition="opacity 0.5s ease-in-out";
+});
+
+});
+
+</script>
 
 </body>
 </html>
