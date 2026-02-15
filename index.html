@@ -579,6 +579,88 @@ Such AI-driven systems enhance clinical accuracy, optimize therapeutic strategie
 
 });
 </script>
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+
+/* =========================================
+   REMOVE FIGURE 2 FROM APPLICATIONS TAB
+========================================= */
+const appTab = document.querySelector("#applications");
+if(appTab){
+    const figures = appTab.querySelectorAll("img, p strong");
+    figures.forEach(el => {
+        if(el.innerText && el.innerText.includes("Figure 2")){
+            el.closest("div").remove();
+        }
+    });
+}
+
+
+/* =========================================
+   UPDATE INTRODUCTION FIGURE WITH
+   RELEVANT BIOINFORMATICS IMAGE
+========================================= */
+
+const homeTab = document.querySelector("#home");
+
+if(homeTab){
+
+    /* Remove previous inserted images if any */
+    homeTab.querySelectorAll("img").forEach(img => img.remove());
+
+    homeTab.insertAdjacentHTML("beforeend", `
+
+    <hr class="my-5">
+
+    <h4>High-Throughput Genomic Sequencing</h4>
+
+    <div class="text-center my-4">
+    <img src="https://images.unsplash.com/photo-1576089172869-4f5f6f315620?auto=format&fit=crop&w=1400&q=80"
+    class="img-fluid rounded shadow"
+    style="max-height:420px; object-fit:cover;">
+    
+    <p style="font-size:14px; color:#555; margin-top:10px;">
+    <strong>Figure 1:</strong> High-throughput DNA sequencing and computational genomic analysis in a molecular biology laboratory environment.
+    </p>
+    </div>
+
+    <p>
+    Advanced sequencing technologies generate extensive genomic datasets which are processed through 
+    bioinformatics pipelines involving alignment algorithms, variant detection systems, and 
+    statistical interpretation models. These integrated laboratory–computational workflows 
+    underpin modern precision medicine and translational research.
+    </p>
+
+    `);
+}
+
+
+/* =========================================
+   ADD PROFESSIONAL DISCLAIMER ABOVE FOOTER
+========================================= */
+
+const footer = document.querySelector("footer");
+
+if(footer){
+    footer.insertAdjacentHTML("beforebegin", `
+
+    <div style="background:#f8f9fa; padding:30px 0; border-top:1px solid #ddd;">
+        <div class="container">
+            <h5 style="color:#0a2a43; font-weight:600;">Academic Disclaimer</h5>
+            <p style="font-size:14px; color:#555; margin-top:10px;">
+            This website has been developed as part of an academic coursework project. 
+            The content presented is intended solely for educational and scholarly discussion. 
+            All information provided reflects academic research perspectives and does not 
+            constitute professional medical advice, diagnosis, or treatment recommendations.
+            </p>
+        </div>
+    </div>
+
+    `);
+}
+
+});
+</script>
 
 </body>
 </html>
