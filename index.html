@@ -661,6 +661,87 @@ if(footer){
 
 });
 </script>
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+
+/* ------------------------------
+   REMOVE ETHICS TAB DISCLAIMER
+--------------------------------*/
+const infraTab = document.querySelector("#infrastructure");
+if(infraTab){
+    const disclaimerEl = infraTab.querySelector(".disclaimer-box");
+    if(disclaimerEl) disclaimerEl.remove();
+}
+
+/* ------------------------------
+   FIX APPLICATIONS TAB CONTENT
+--------------------------------*/
+const appTab = document.querySelector("#applications");
+if(appTab){
+
+    // Clear existing empty content
+    appTab.innerHTML = "";
+
+    // Add structured academic content + visual
+    appTab.insertAdjacentHTML("beforeend", `
+
+    <h2 class="section-title">Clinical Applications & Data Visualization</h2>
+
+    <p>
+    In modern healthcare, bioinformatics and data science power multiple domains of clinical practice. 
+    From genomic mutation profiling that informs cancer therapies, to predictive risk models in cardiology and epidemiological forecasting, these techniques are translating data to decisions.
+    </p>
+
+    <div class="text-center my-4">
+      <img src="https://images.pexels.com/photos/7089406/pexels-photo-7089406.jpeg?auto=compress&cs=tinysrgb&w=1600"
+           class="img-fluid rounded shadow" 
+           style="max-height:400px; object-fit:cover;">
+      <p style="font-size:14px; color:#555; margin-top:10px;">
+      <strong>Figure A:</strong> Bioinformatics-driven analytics interpreted alongside clinical data to support precision medical strategies.
+      </p>
+    </div>
+
+    <p>
+    The figure above illustrates how different types of biomedical data (genomic, imaging, clinical measurements) 
+    can be integrated through machine learning and statistical models to support clinical decision-making. These methods directly impact patient stratification, early detection algorithms, and personalized therapy optimization.
+    </p>
+
+    <table class="table table-bordered mt-3">
+    <thead class="table-light">
+      <tr>
+        <th>Application Area</th>
+        <th>Example Tools / Methods</th>
+        <th>Clinical Impact</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Cancer Genomics</td>
+        <td>NGS + Variant Annotation</td>
+        <td>Targeted therapy selection</td>
+      </tr>
+      <tr>
+        <td>Cardiac Risk Modeling</td>
+        <td>ML Predictive Models</td>
+        <td>Early intervention planning</td>
+      </tr>
+      <tr>
+        <td>Public Health Forecasting</td>
+        <td>SIR Models + Big Data</td>
+        <td>Outbreak control optimization</td>
+      </tr>
+    </tbody>
+    </table>
+
+    <p>
+    These structured applications highlight the translational pathway from computational analysis to improved patient care and system-level efficiency.
+    </p>
+
+    `);
+}
+
+});
+</script>
 
 </body>
 </html>
