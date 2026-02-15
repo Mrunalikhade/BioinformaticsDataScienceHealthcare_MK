@@ -428,6 +428,96 @@ pane.style.transition="opacity 0.5s ease-in-out";
 });
 
 </script>
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+
+/* =========================
+   INTRODUCTION VISUAL
+========================= */
+
+document.querySelector("#home").insertAdjacentHTML("beforeend", `
+
+<hr class="my-5">
+
+<h4>Computational Genomics Visualization</h4>
+
+<div class="text-center">
+<svg width="100%" height="200" viewBox="0 0 800 200">
+  <path d="M0 100 Q100 20 200 100 T400 100 T600 100 T800 100"
+        stroke="#145374" stroke-width="4" fill="transparent"/>
+  <path d="M0 120 Q100 200 200 120 T400 120 T600 120 T800 120"
+        stroke="#1f618d" stroke-width="4" fill="transparent"/>
+</svg>
+<p style="font-size:14px;color:#555;">
+Figure 1.2: Stylized DNA double-helix representation symbolizing genomic data analysis.
+</p>
+</div>
+
+<p>
+The double-helical model illustrates the biological foundation of computational genomics. 
+Bioinformatics algorithms decode nucleotide sequences, identify structural variations, 
+and enable precision-driven therapeutic decision-making.
+</p>
+
+`);
+
+
+/* =========================
+   APPLICATIONS VISUAL
+========================= */
+
+document.querySelector("#applications").insertAdjacentHTML("beforeend", `
+
+<hr class="my-5">
+
+<h4>AI-Based Clinical Decision Workflow</h4>
+
+<div class="figure-box text-center">
+
+<div style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:20px;">
+
+<div style="flex:1; min-width:150px;">
+<div style="background:#eaf2f8; padding:15px; border-radius:8px;">
+Patient Data Input
+</div>
+</div>
+
+<div style="flex:1; min-width:150px;">
+<div style="background:#d6eaf8; padding:15px; border-radius:8px;">
+Feature Extraction
+</div>
+</div>
+
+<div style="flex:1; min-width:150px;">
+<div style="background:#aed6f1; padding:15px; border-radius:8px;">
+Machine Learning Model
+</div>
+</div>
+
+<div style="flex:1; min-width:150px;">
+<div style="background:#85c1e9; padding:15px; border-radius:8px;">
+Risk Prediction Output
+</div>
+</div>
+
+</div>
+
+<p style="margin-top:15px;font-size:14px;color:#555;">
+Figure 3.1: Simplified AI-driven clinical analytics workflow used in predictive healthcare systems.
+</p>
+
+</div>
+
+<p>
+This workflow demonstrates how structured biomedical data is transformed into 
+clinically actionable insights through supervised and unsupervised learning models. 
+Such systems enhance diagnostic precision and support evidence-based interventions.
+</p>
+
+`);
+
+});
+</script>
 
 </body>
 </html>
